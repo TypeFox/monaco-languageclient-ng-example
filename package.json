@@ -1,0 +1,54 @@
+{
+  "name": "example-angular-client",
+  "version": "0.0.0",
+  "private": "true",
+  "type": "module",
+  "scripts": {
+    "clean": "npx shx rm -fr dist *.tsbuildinfo src/assets",
+    "build:msg": "echo Building angular-client example:",
+    "build": "npm run build:msg && npm run clean && npm run copy:codicon && ng build",
+    "lint": "eslint . --ext .ts",
+    "start": "npm run clean && npm run copy:codicon && ng serve",
+    "copy:codicon": "npx shx mkdir -p ./src/assets && npx shx cp ./node_modules/monaco-editor/esm/vs/base/browser/ui/codicons/codicon/codicon.ttf ./src/assets/codicon.ttf",
+    "watch": "npm run clean && npm run copy:codicon && ng build --watch --configuration development"
+  },
+  "dependencies": {
+    "@angular/compiler": "~15.2.5",
+    "@angular/core": "~15.2.5",
+    "@angular/platform-browser": "~15.2.5",
+    "@angular/platform-browser-dynamic": "~15.2.5",
+    "monaco-languageclient": "~5.0.1",
+    "monaco-editor-workers": "~0.36.0",
+    "normalize-url": "~8.0.0",
+    "rxjs": "~7.8.0",
+    "vscode-ws-jsonrpc": "~3.0.0",
+    "zone.js": "~0.13.0"
+  },
+  "devDependencies": {
+    "@angular-builders/custom-webpack": "~15.0.0",
+    "@angular-devkit/build-angular": "~15.2.4",
+    "@angular/cli": "~15.2.4",
+    "@angular/compiler-cli": "~15.2.5",
+    "@typescript-eslint/eslint-plugin": "~5.56.0",
+    "@typescript-eslint/parser": "~5.56.0",
+    "@types/node": "~18.15.5",
+    "@types/vscode": "~1.76.0",
+    "css-loader": "~6.7.3",
+    "editorconfig": "~1.0.2",
+    "eslint": "~8.36.0",
+    "eslint-config-standard": "~17.0.0",
+    "eslint-plugin-header": "~3.1.1",
+    "eslint-plugin-import": "~2.27.5",
+    "eslint-plugin-promise": "~6.1.1",
+    "eslint-plugin-unused-imports": "~2.0.0",
+    "path-browserify": "~1.0.1",
+    "shx": "~0.3.4",
+    "style-loader": "~3.3.2",
+    "tslib": "~2.5.0",
+    "typescript": "~4.9.5"
+  },
+  "volta": {
+    "node": "18.16.0",
+    "npm": "9.6.3"
+  }
+}
