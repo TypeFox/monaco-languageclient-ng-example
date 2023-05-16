@@ -11,15 +11,23 @@ const config = {
                 test: /\.css$/,
                 use: ['style-loader', 'css-loader'],
                 include: [
-                    resolve(__dirname, './node_modules/monaco-editor')
+                    resolve(__dirname, './node_modules/monaco-editor'),
+                    resolve(__dirname, './node_modules/vscode')
                 ]
             },
             {
-                test: /\.(mp3|wasm)$/i,
+                test: /\.(mp3|wasm|ttf)$/i,
                 type: 'asset/resource'
             }
-        ]
+        ],
+        // this fixes the ttf url loading issue
+        parser: {
+            javascript: {
+                url: true
+            }
+        }
     },
+
     resolve: {
         extensions: ['.ts', '.js'],
         fallback: {
