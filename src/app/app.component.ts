@@ -15,6 +15,8 @@ import normalizeUrl from 'normalize-url';
 import { AfterViewInit, Component } from '@angular/core';
 import { CloseAction, ErrorAction, MessageTransports } from 'vscode-languageclient/lib/common/client.js';
 
+import 'vscode/default-extensions/json';
+
 buildWorkerDefinition('./assets/monaco-editor-workers/workers', window.location.href + '../..', false);
 
 @Component({
@@ -85,6 +87,7 @@ export class MonacoEditorComponent implements AfterViewInit {
                 modelEditorServiceConfig: {
                     useDefaultFunction: true
                 },
+                enableLanguagesService: true,
                 debugLogging: true
             });
             this.initDone = true;
