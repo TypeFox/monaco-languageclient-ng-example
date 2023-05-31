@@ -11,10 +11,10 @@ import { createConfiguredEditor, createModelReference } from 'vscode/monaco';
 import { initServices, MonacoLanguageClient } from 'monaco-languageclient';
 import { toSocket, WebSocketMessageReader, WebSocketMessageWriter } from 'vscode-ws-jsonrpc';
 import normalizeUrl from 'normalize-url';
-
 import { AfterViewInit, Component } from '@angular/core';
 import { CloseAction, ErrorAction, MessageTransports } from 'vscode-languageclient/lib/common/client.js';
 
+import 'vscode/default-extensions/theme-defaults';
 import 'vscode/default-extensions/json';
 
 buildWorkerDefinition('./assets/monaco-editor-workers/workers', window.location.href + '../..', false);
