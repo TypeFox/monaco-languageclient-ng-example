@@ -83,9 +83,11 @@ export class MonacoEditorComponent implements AfterViewInit {
         if (!this.initDone) {
             await initServices({
                 enableThemeService: true,
-                enableModelEditorService: true,
-                modelEditorServiceConfig: {
-                    useDefaultFunction: true
+                enableTextmateService: true,
+                enableModelService: true,
+                configureEditorOrViewsServiceConfig: {
+                    enableViewsService: false,
+                    useDefaultOpenEditorFunction: true
                 },
                 enableLanguagesService: true,
                 debugLogging: true
