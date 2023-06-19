@@ -3,9 +3,9 @@
  * Licensed under the MIT License. See License.txt in the project root for license information.
  * ------------------------------------------------------------------------------------------ */
 
-import { buildWorkerDefinition } from 'monaco-editor-workers';
-
-import 'monaco-editor/esm/vs/editor/edcore.main.js';
+import 'monaco-editor/esm/vs/editor/editor.all.js';
+import 'monaco-editor/esm/vs/editor/standalone/browser/accessibilityHelp/accessibilityHelp.js';
+import 'monaco-editor/esm/vs/editor/standalone/browser/iPadShowKeyboard/iPadShowKeyboard.js';
 import { languages, Uri } from 'monaco-editor/esm/vs/editor/editor.api.js';
 import { createConfiguredEditor, createModelReference } from 'vscode/monaco';
 import { initServices, MonacoLanguageClient } from 'monaco-languageclient';
@@ -13,10 +13,10 @@ import { toSocket, WebSocketMessageReader, WebSocketMessageWriter } from 'vscode
 import normalizeUrl from 'normalize-url';
 import { AfterViewInit, Component } from '@angular/core';
 import { CloseAction, ErrorAction, MessageTransports } from 'vscode-languageclient/lib/common/client.js';
-
 import 'vscode/default-extensions/theme-defaults';
 import 'vscode/default-extensions/json';
 
+import { buildWorkerDefinition } from 'monaco-editor-workers';
 buildWorkerDefinition('./assets/monaco-editor-workers/workers', window.location.href + '../..', false);
 
 @Component({
@@ -82,6 +82,9 @@ export class MonacoEditorComponent implements AfterViewInit {
 
         if (!this.initDone) {
             await initServices({
+                enableFilesService: true,
+                enableKeybindingsService: true,
+                enableQuickaccessService: true,
                 enableThemeService: true,
                 enableTextmateService: true,
                 enableModelService: true,
