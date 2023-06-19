@@ -17,8 +17,8 @@
     "@angular/core": "~16.0.5",
     "@angular/platform-browser": "~16.0.5",
     "@angular/platform-browser-dynamic": "~16.0.5",
-    "monaco-languageclient": "~6.1.0",
-    "monaco-editor-workers": "~0.38.0",
+    "monaco-languageclient": "~6.2.0",
+    "monaco-editor-workers": "~0.39.1",
     "normalize-url": "~8.0.0",
     "rxjs": "~7.8.1",
     "vscode-ws-jsonrpc": "~3.0.0",
@@ -49,6 +49,6 @@
   },
   "volta": {
     "node": "18.16.0",
-    "npm": "9.6.6"
+    "npm": "9.6.7"
   }
 }
