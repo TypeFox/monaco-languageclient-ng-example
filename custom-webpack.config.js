@@ -27,12 +27,8 @@ const config = {
             }
         }
     },
-
     resolve: {
-        extensions: ['.ts', '.js'],
-        fallback: {
-            path: resolve(__dirname, './node_modules/path-browserify')
-        }
+        extensions: ['.ts', '.js', '.json', '.ttf']
     }
 };
 

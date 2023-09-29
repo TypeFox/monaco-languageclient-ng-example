@@ -10,6 +10,15 @@
           "name": "Launch Chrome against localhost",
           "url": "http://localhost:4200",
           "webRoot": "${workspaceFolder}"
+      },
+      {
+        "name": "Launch JSON LS",
+        "type": "node",
+        "request": "launch",
+        "args": ["${workspaceRoot}/src/server/json-server.ts"],
+        "runtimeArgs": ["--nolazy", "--loader", "ts-node/esm"],
+        "cwd": "${workspaceRoot}",
+        "internalConsoleOptions": "openOnSessionStart"
       }
     ]
 }

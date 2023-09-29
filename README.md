@@ -10,7 +10,11 @@ npm is required
 npm ci
 ```
 
-The angular client we start last needs to connect to the language server, therefore start the [server example](https://github.com/TypeFox/monaco-languageclient#examples) found in the main monaco-languageclient repository.
+The angular client we start last needs to connect to example JSON language server from the [monaco-languageclient examples](https://github.com/TypeFox/monaco-languageclient#examples), therefore start the server like this:
+
+```shell
+npm run start
+```
 
 Start the local Angular development server:
 
@@ -19,3 +23,5 @@ npm run start
 ```
 
 It serves on the client here: <http://localhost:4200>. You can use the vscode launch config to launch Chrome for debugging.
+
+Both client and server code is re-used from [monaco-languageclient-examples](https://www.npmjs.com/package/monaco-languageclient-examples).
