@@ -54,7 +54,7 @@ module.exports = {
     ignorePatterns: [
         'dist',
         'node_modules',
-        'src/assets',
+        'src/server',
         'config/header.js',
         'custom-webpack.config.js',
         '.eslintrc.cjs'
