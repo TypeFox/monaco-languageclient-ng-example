@@ -31,7 +31,7 @@
     "@angular/compiler-cli": "~16.2.7",
     "@typescript-eslint/eslint-plugin": "~6.7.3",
     "@typescript-eslint/parser": "~6.7.3",
-    "@types/node": "~18.18.0",
+    "@types/react": "~18.2.25",
     "@types/vscode": "~1.82.0",
     "css-loader": "~6.8.1",
     "editorconfig": "~2.0.0",
@@ -44,7 +44,6 @@
     "shx": "~0.3.4",
     "style-loader": "~3.3.3",
     "ts-node": "~10.9.1",
-    "tslib": "~2.6.2",
     "typescript": "~5.1.6"
   },
   "volta": {

@@ -6,11 +6,7 @@
     "moduleResolution": "Node16",
     "lib": [
       "ES2022",
-      "DOM",
-      "DOM.Iterable",
-    ],
-    "types": [
-      "node"
+      "DOM"
     ],
     "esModuleInterop": true,
     "resolveJsonModule": true,
@@ -26,9 +22,9 @@
     "noImplicitReturns": true,
     "noUnusedParameters": true,
     "noUnusedLocals": true,
-     // Skip type checking of declaration files.
-    "skipLibCheck": true,
-     // Disallow inconsistently-cased references to the same file
+    // this should not be required
+    "skipLibCheck": false,
+    // Disallow inconsistently-cased references to the same file
     "forceConsistentCasingInFileNames": true,
     "noImplicitOverride": true,
     "experimentalDecorators": true,
