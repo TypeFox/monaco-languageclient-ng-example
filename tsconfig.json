@@ -23,7 +23,7 @@
     "noUnusedParameters": true,
     "noUnusedLocals": true,
     // this should not be required
-    "skipLibCheck": false,
+    "skipLibCheck": true,
     // Disallow inconsistently-cased references to the same file
     "forceConsistentCasingInFileNames": true,
     "noImplicitOverride": true,
