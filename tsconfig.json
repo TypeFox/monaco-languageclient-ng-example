@@ -7,10 +7,6 @@
     "lib": [
       "ES2022",
       "DOM",
-      "DOM.Iterable",
-    ],
-    "types": [
-      "node"
     ],
     "esModuleInterop": true,
     "resolveJsonModule": true,
@@ -26,9 +22,7 @@
     "noImplicitReturns": true,
     "noUnusedParameters": true,
     "noUnusedLocals": true,
-     // Skip type checking of declaration files.
-    "skipLibCheck": true,
-     // Disallow inconsistently-cased references to the same file
+    // Disallow inconsistently-cased references to the same file
     "forceConsistentCasingInFileNames": true,
     "noImplicitOverride": true,
     "experimentalDecorators": true,

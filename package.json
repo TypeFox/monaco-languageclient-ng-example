@@ -9,7 +9,7 @@
     "build": "npm run build:msg && npm run clean && ng build",
     "lint": "eslint . --ext .ts",
     "start": "npm run clean && ng serve",
-    "start:server": "node --loader ts-node/esm ./src/servers/json-server.ts",
+    "start:server": "node --loader ts-node/esm ./src/server/json-server.ts",
     "watch": "npm run clean && ng build --watch --configuration development",
     "reset:repo": "git clean -f -X -d"
   },
@@ -19,7 +19,7 @@
     "@angular/platform-browser": "~16.2.7",
     "@angular/platform-browser-dynamic": "~16.2.7",
     "monaco-editor-workers": "~0.43.0",
-    "monaco-languageclient-examples": "~6.5.1",
+    "monaco-languageclient-examples": "~6.5.3",
     "rxjs": "~7.8.1",
     "vscode-ws-jsonrpc": "~3.0.0",
     "zone.js": "~0.13.0"
@@ -32,6 +32,7 @@
     "@typescript-eslint/eslint-plugin": "~6.7.3",
     "@typescript-eslint/parser": "~6.7.3",
     "@types/node": "~18.18.0",
+    "@types/react": "~18.2.28",
     "@types/vscode": "~1.82.0",
     "css-loader": "~6.8.1",
     "editorconfig": "~2.0.0",
