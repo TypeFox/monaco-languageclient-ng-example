@@ -14,30 +14,30 @@
     "reset:repo": "git clean -f -X -d"
   },
   "dependencies": {
-    "@angular/compiler": "~16.2.12",
-    "@angular/core": "~16.2.12",
-    "@angular/platform-browser": "~16.2.12",
-    "@angular/platform-browser-dynamic": "~16.2.12",
-    "monaco-editor": "npm:@codingame/monaco-editor-treemended@>=1.83.12 <1.84.0",
-    "monaco-editor-workers": "~0.44.0",
-    "monaco-languageclient-examples": "~7.1.0",
+    "@angular/compiler": "~17.0.8",
+    "@angular/core": "~17.0.8",
+    "@angular/platform-browser": "~17.0.8",
+    "@angular/platform-browser-dynamic": "~17.0.8",
+    "monaco-editor": "npm:@codingame/monaco-editor-treemended@>=1.85.0 <1.86.0",
+    "monaco-editor-workers": "~0.45.0",
+    "monaco-languageclient-examples": "~7.3.0",
     "rxjs": "~7.8.1",
     "vscode-ws-jsonrpc": "~3.1.0",
-    "zone.js": "~0.13.0"
+    "zone.js": "~0.14.2"
   },
   "devDependencies": {
-    "@angular-builders/custom-webpack": "~16.0.1",
-    "@angular-devkit/build-angular": "~16.2.10",
-    "@angular/cli": "~16.2.10",
-    "@angular/compiler-cli": "~16.2.12",
-    "@typescript-eslint/eslint-plugin": "~6.10.0",
-    "@typescript-eslint/parser": "~6.10.0",
-    "@types/node": "~18.18.9",
-    "@types/react": "~18.2.33",
-    "@types/vscode": "~1.83.3",
+    "@angular-builders/custom-webpack": "17.0.0",
+    "@angular-devkit/build-angular": "~17.0.8",
+    "@angular/cli": "17.0.8",
+    "@angular/compiler-cli": "~17.0.8",
+    "@typescript-eslint/eslint-plugin": "~6.17.0",
+    "@typescript-eslint/parser": "~6.17.0",
+    "@types/node": "~20.10.6",
+    "@types/react": "~18.2.46",
+    "@types/vscode": "~1.85.0",
     "css-loader": "~6.8.1",
     "editorconfig": "~2.0.0",
-    "eslint": "~8.53.0",
+    "eslint": "~8.56.0",
     "eslint-config-standard": "~17.1.0",
     "eslint-plugin-header": "~3.1.1",
     "eslint-plugin-import": "~2.29.0",
@@ -47,16 +47,16 @@
     "style-loader": "~3.3.3",
     "ts-node": "~10.9.1",
     "tslib": "~2.6.2",
-    "typescript": "~5.1.6"
+    "typescript": "~5.2.2"
   },
   "overrides": {
     "monaco-editor": "$monaco-editor"
   },
   "resolutions": {
-    "monaco-editor": "npm:@codingame/monaco-editor-treemended@>=1.83.12 <1.84.0"
+    "monaco-editor": "npm:@codingame/monaco-editor-treemended@>=1.85.0 <1.86.0"
   },
   "volta": {
-    "node": "18.18.2",
-    "npm": "9.9.0"
+    "node": "20.10.0",
+    "npm": "10.2.3"
   }
 }
