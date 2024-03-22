@@ -1,5 +1,7 @@
 # monaco-languageclient-ng-example
 
+**These project has been migrated to [monaco-languageclient repo](https://github.com/TypeFox/monaco-languageclient) and is available [here](https://github.com/TypeFox/monaco-languageclient/tree/main/verify/angular).**
+
 It does the same as the regular monaco-languageclient [client example](https://github.com/TypeFox/monaco-languageclient#examples) but inside an Angular Component.
 
 ## Getting started
